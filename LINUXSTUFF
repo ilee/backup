@@ -1,0 +1,3 @@
+// Bash prompt config in .bash_profile file
+PS1='\e[0;37m\`pwd\`\n[\u@\h \t]\$ \e[m'
+
