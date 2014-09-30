@@ -1,3 +1,19 @@
 // Bash prompt config in .bash_profile file
 PS1='\e[0;37m\`pwd\`\n[\u@\h \t]\$ \e[m'
 
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+BLUE=$(tput setaf 4)
+CYAN=$(tput setaf 6)
+GREY=$(tput setaf 7)
+RESET=$(tput sgr0)
+
+PS1='\[$CYAN\]`pwd`\n\[$GREY\][\u@\h \t]\[$RESET\]\$ '
+
+export PATH=/usr/local/bin:$PATH
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
