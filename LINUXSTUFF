@@ -1,5 +1,6 @@
 // Bash prompt config in .bash_profile file
-PS1='\e[0;37m\`pwd\`\n[\u@\h \t]\$ \e[m'
+// old prompt, glitchy
+// PS1='\e[0;37m\`pwd\`\n[\u@\h \t]\$ \e[m'
 
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
@@ -9,7 +10,9 @@ CYAN=$(tput setaf 6)
 GREY=$(tput setaf 7)
 RESET=$(tput sgr0)
 
-PS1='\[$CYAN\]`pwd`\n\[$GREY\][\u@\h \t]\[$RESET\]\$ '
+// PS1='\[$CYAN\]`pwd`\n\[$GREY\][\u@\h \t]\[$RESET\]\$ '
+// space invader version
+PS1='\[$CYAN\]`pwd`\n\[$GREY\][\u@\h \t]\[$RESET\]<U+1F47E>  '
 
 export PATH=/usr/local/bin:$PATH
 
